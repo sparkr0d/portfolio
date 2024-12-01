@@ -3,51 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Game Developer Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">My Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Game Developer Portfolio</h1>
+    <p>Explore my journey in game and website development.</p>
   </header>
 
-  <section id="home" class="hero">
-    <h1>Welcome</h1>
-    <p>Discover my work and journey as a [Your Profession/Role].</p>
-  </section>
+  <!-- Navigation Menu -->
+  <nav>
+    <button onclick="showSection('home')" class="nav-btn">Home</button>
+    <button onclick="showSection('games')" class="nav-btn">Game Projects</button>
+    <button onclick="showSection('websites')" class="nav-btn">Website Projects</button>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a [Your Profession/Role], passionate about [Your Interests].</p>
-  </section>
+  <!-- Main Content -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Discover my projects in game development and website creation. Use the navigation above to explore.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Short description about this project.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Short description about this project.</p>
-    </div>
-  </section>
+    <!-- Game Projects Section -->
+    <section id="games" class="hidden">
+      <h2>Game Projects</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <iframe 
+            src="https://www.youtube.com/embed/a3c4wx9XAR4" 
+            title="2D PLATFORMER SHOOTER GAME" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <h3>2D PLATFORMER SHOOTER GAME</h3>
+          <p>Immerse yourself in an adrenaline-pumping 2D action platformer where agility and precision are your greatest allies. As the hero, your mission is to traverse perilous levels teeming with danger, using your wits and weaponry to overcome a relentless wave of enemies. Navigate intricate platforming challenges, uncover hidden paths, and collect power-ups to enhance your abilities. The ultimate goal? Face off against a formidable boss in an epic showdown that will test your skills to the limit. With fast-paced combat, engaging level design, and a captivating retro aesthetic, this game delivers an exhilarating experience for players seeking action-packed thrills and satisfying victories.</p>
+        </div>
+        <div class="gallery-item">
+          <iframe 
+            src="https://www.youtube.com/embed/faDCrMCf6So" 
+            title="3D HORROR GAME" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <h3>3D HORROR GAME</h3>
+          <p>Step into the chilling world of a 3D horror experience where survival hinges on your courage and cunning. Trapped inside a dark and foreboding building, your only chance of escape is to locate three hidden keys to unlock the gate to freedom. But you re not alone. A relentless and terrifying monster stalks your every move, forcing you to stay vigilant and strategic. Armed with just a flashlight, you can temporarily repel the creature, buying precious seconds to search for the keys and plan your next move. With eerie atmospherics, tense gameplay, and heart-pounding encounters, this game delivers a gripping survival horror adventure that keeps you on the edge of your seat until the very end.</p>
+        </div>
+        <div class="gallery-item">
+          <iframe 
+            src="https://www.youtube.com/embed/z23Z-FI5QWA" 
+            title="3D HORROR GAME" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <h3>3D SURVIVAL GAME</h3>
+          <p>In this collaborative project, my primary focus was on procedural generation and optimization to enhance both gameplay and performance. I developed the system responsible for procedurally generating the terrain and desert buildings, creating a dynamic and immersive environment. Additionally, I implemented procedural generation for the interior layouts of buildings, ensuring varied and engaging exploration experiences for players. To support smooth gameplay, I worked on optimizing the terrain rendering, significantly reducing performance bottlenecks and delivering a seamless and visually appealing experience.</p>
+        </div>
+        <div class="gallery-item">
+          <iframe 
+            src="https://www.youtube.com/embed/z23Z-FI5QWA" 
+            title="3D HORROR GAME" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <h3>3D SURVIVAL GAME</h3>
+          <p>In this collaborative project, my primary focus was on procedural generation and optimization to enhance both gameplay and performance. I developed the system responsible for procedurally generating the terrain and desert buildings, creating a dynamic and immersive environment. Additionally, I implemented procedural generation for the interior layouts of buildings, ensuring varied and engaging exploration experiences for players. To support smooth gameplay, I worked on optimizing the terrain rendering, significantly reducing performance bottlenecks and delivering a seamless and visually appealing experience.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out via email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-  </section>
+    <!-- Website Projects Section -->
+    <section id="websites" class="hidden">
+      <h2>Website Projects</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID3" 
+            title="Website Project 1" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <h3>Website Project 1</h3>
+          <p>Description of Website Project 1.</p>
+        </div>
+        <div class="gallery-item">
+          <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID4" 
+            title="Website Project 2" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <h3>Website Project 2</h3>
+          <p>Description of Website Project 2.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2024 My Portfolio. All rights reserved.</p>
+    <p>© 2024 Game Developer Portfolio. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
